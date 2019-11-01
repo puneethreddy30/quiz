@@ -8,7 +8,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
-import { AuthGaurd } from './services/auth.gaurd';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { AuthGaurd } from './services/auth.gaurd';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AuthGaurd],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
