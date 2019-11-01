@@ -1,0 +1,10 @@
+<div> <br><br><br><br><br><br>
+  <img src="https://raw.githubusercontent.com/srikarpv/ProductManagement/master/clipart1141632.png" height="100px" width="100px"> <br><br>
+
+  <table align="center">
+    <tr><td><h3>Select Quiz:</h3></td></tr>
+   <tr> <td><select name="wgtmsr" id="wgtmsr" [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
+      <option *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
+    </select></td></tr></table>
+    <input class="button1" id="button1" type="submit" [routerLink]="['/quiz',quiz.id]">
+  </div>
